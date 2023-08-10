@@ -1,0 +1,146 @@
+:root{
+    /* colors */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+  
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+@font-face {
+    font-family:Hanken ;
+    src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+body{
+    font-family:Hanken ;
+    padding-top: 300px;
+}
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    height:400px;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: rgb(251, 253, 255);
+}
+.col1{
+    flex: 1;
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+    border-radius: 30px;
+    color: white;
+    padding: 20px;
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5rem;
+    background-image: linear-gradient(to bottom, var(--Violet-blue), var(--Persian-blue));
+    border-radius: 50%;
+    height:150px;
+    width: 150px;
+}
+.result{
+    font-size: 1rem;
+    color: var(--Light-lavender);
+   text-align: center;
+}
+.score{
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.out-of{
+    color: var(--Light-lavender);
+    font-weight: bold;
+    opacity: .7;
+}
+h3{
+    font-family:Hanken ;
+    text-align:center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--Pale-blue);
+    margin-bottom: .5rem;
+}
+.feed{
+    text-align: center;
+    font-weight: 500;
+  color: var(--Light-lavender);
+}
+.col2{
+    flex: 1;
+    padding: 20px;
+}
+.card:nth-of-type(1){
+    color: var(--Light-red);
+    background-color: hsla(0, 100%, 67%, .2);
+  }
+  
+  .card:nth-of-type(2){
+    color: var(--Orangey-yellow);
+    background-color: hsla(39, 100%, 56%, .2);
+  }
+  
+  .card:nth-of-type(3){
+    color: var(--Green-teal);
+    background-color: hsla(166, 100%, 37%, .2);
+  }
+  
+  .card:nth-of-type(4){
+    color: var(--Cobalt-blue);
+    background-color: hsla(234, 85%, 45%, .2);
+  }
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    width: 190px;
+    border-radius: 10px;
+    background-color: var(--Light-red);
+    padding: 1rem 1.5rem;
+    margin: 10px;
+}
+.inside-card{
+    display: flex;
+    gap: 1rem;
+}
+.sum-score{
+
+    font-weight: bolder;
+    color: grey;
+    font-size: .9rem;
+}
+.sc{
+    color: var(--Dark-gray-blue);
+}
+.card-description-button{
+    color: var(--Pale-blue);
+    background-color: var(--Dark-gray-blue);
+    border-radius: 30px;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .card-description-button:hover,
+  .card-description-button:active{
+    background-color: var(--Dark-gray-blue);
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+    cursor: pointer;
+  
+  }
